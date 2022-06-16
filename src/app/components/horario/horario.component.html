@@ -1,1 +1,17 @@
-<p>horario works!</p>
+<h1> Consulta su placa</h1>
+
+<hr>
+<div style="align-items: center; justify-content: center;"> 
+    <div class="card" *ngFor="let horario of horarios; let i =index" style="width: 18rem;">
+        <img class="card-img-top" [src]="horario.img" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{horario.dia}} </h5>
+          <p class="card-text">Su horario de circulacion es de: .</p>
+          <p>07:00 - 08:00 </p>
+          <p>17:00 - 20:00</p>
+          <button type="button" class="btn btn-outline-primary btn-block" [routerLink] = "['home']" > Confirmar</button>
+        </div>
+      </div>
+    
+</div>
+

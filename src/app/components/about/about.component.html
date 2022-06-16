@@ -1,1 +1,23 @@
-<p>about works!</p>
+<h1 class="animated fadeIn fast"> Horarios de pico y placa en la ciudad de Quito </h1>
+<hr class=" animated  fadiIn">
+
+<div class="container">
+
+    <div class="card-columns">
+        <div class="card" *ngFor="let horario of horarios; let i =index">
+            <img class="card-img-top" [src]="horario.img" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{horario.dia}} </h5>
+              <p class="card-text">Su horario de circulacion es de: .</p>
+              <p>07:00 - 08:00 </p>
+              <p>17:00 - 20:00</p>
+              <button  (click)="verDia(i)" 
+              
+              type="button" class="btn btn-outline-primary btn-block"  > Editar</button>
+            </div>
+        
+        
+      </div>
+
+
+</div>

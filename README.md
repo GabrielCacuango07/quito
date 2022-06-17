@@ -1,27 +1,79 @@
-# Quito
+# Título del Proyecto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Sistema de Consulta y edición de horario “Pico y Placa”
 
-## Development server
+## Comenzando 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo .
 
-## Code scaffolding
+Mira **Intalación** para conocer como desplegar el proyecto.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### Pre-requisitos 📋
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+```
+Angular CLI
+```
 
-## Running unit tests
+### Instalación 🔧
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+verificar el Angular CLI mediante el cmd 
 
-## Running end-to-end tests
+```
+ng --version
+```
+si dispone de angular CLI se despliega la información del Angular CLI caso contrario instale por favor Angular CLI
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+Clone el repositorio para realizar una copia del proyecto y ejecutarlo en su computador:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+git clone 'https://github.com/GabrielCacuango07/quito.git'
+```
+
+Luego dirigase dentro de la carpeta del proyecto y proceda a ejecutar 
+
+ `ng serve` para iniciar el servidor. Dirigirse a  `http://localhost:4200/`. La aplicacion automaticamente se ejecutara y respondera a los cambios en tiempo real
+
+o ejecutar directamente:
+
+```
+ng serve -o
+```
+
+La aplicación se despliega en su navegador de forma automatica.
+
+
+
+## Despliegue 📦
+
+La informacion se encuentra en la misma aplicación, unicamente para uso ilustrativo
+
+## Construido con 🛠️
+
+* [Angular](https://angular.io) - El framework web usado
+* [Bootstrap](https://getbootstrap.com) - Ganerador de estilos 
+
+## Autores ✒️
+
+
+* **Gabriel Cacuango** - *Trabajo Inicial -Final * - *Documentación* - [Gabriel Cacuango](https://github.com/GabrielCacuango07)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/GabrielCacuango07/quito/graphs/contributors) quíenes han participado en este proyecto. 
+
+
+## Expresiones de Gratitud 🎁
+
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Da las gracias públicamente 🤓.
+* etc.
+
+## Solicitar ayuda
+
+Puedes tener mas ayuda en Angular CLI usa `ng help` o dirigete [Angular CLI Overview and Command Reference](https://angular.io/cli) página.
+
+
+---
+⌨️ con ❤️ por [Gabriel Cacuango](https://github.com/GabrielCacuango07) 😊

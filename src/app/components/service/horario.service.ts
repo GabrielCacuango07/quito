@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class horarioService{
-
+    //default data for the days of week
     private horarios:any [] = [
         {
           
@@ -85,15 +85,16 @@ export class horarioService{
     constructor() {
             console.log("Servicio para usar ");
     }
-
+    //get the data 
     getHorarios (): Horario[]{
         return this.horarios;
     }
-
+    // get the data of a day whith the index
     getDia(idx:any){
         return this.horarios[idx];
 
     }
+    //get the data whit a character and the last number of license plate
     buscarPlaca(termino:string): Horario[]{
 
         let diaArr:Horario[]=[];
@@ -111,7 +112,7 @@ export class horarioService{
         return diaArr;
 
     };
-
+    //update the hour for the day
     updateHora(idx:any,dato:string,prox:string){
         let dia =this.getDia(idx);
         dia[prox]=dato;
@@ -120,7 +121,7 @@ export class horarioService{
 };
 
 
-
+// model of interface Horario 
 export interface Horario {
     
     img1:string;

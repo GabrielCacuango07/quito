@@ -18,7 +18,7 @@ export class DiaComponent  {
   id:string = "";
   constructor(private activatedRoute: ActivatedRoute,
               private _horarioService: horarioService) {
-
+ // initialize the vars for shows in the information page 
     this.activatedRoute.params.subscribe( params => {
       this.dia = this._horarioService.getDia(params['id']);
       this.temprano_uno=this.dia.temprano_uno;
@@ -29,7 +29,7 @@ export class DiaComponent  {
     } );
 
    }
-
+   // capture and save the new schedule whith the bottton save using horarioService
    saveHora(){
     this._horarioService.updateHora(this.id,this.temprano_uno,'temprano_uno');
     this._horarioService.updateHora(this.id,this.temprano_dos,'temprano_dos');

@@ -12,7 +12,7 @@ export class HorarioComponent implements OnInit {
 
 
   }
-
+ // get all the days whith the information 
   ngOnInit() {
 
     this.horarios = this._horarioService.getHorarios();

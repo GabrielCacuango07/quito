@@ -14,16 +14,17 @@ export class AboutComponent implements OnInit {
 
 
   }
-
+  // show all the day whit the information for edit whit the botton
   ngOnInit() {
 
     this.horarios = this._horarioService.getHorarios();
-    console.log(this.horarios);
+    //console.log(this.horarios);
 
   }
 
+  // consult only the  day and redirects to show the day for edit the schedule
   verDia(idx:number){
-    console.log(idx);
+    //console.log(idx);
     this.router.navigate(['/dia',idx]);
 
   };

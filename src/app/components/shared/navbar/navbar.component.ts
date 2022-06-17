@@ -12,9 +12,9 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+// use to find the day and readirect for buscar page whit the license plate
 buscarPlaca(termino:string){
-  console.log(termino);
+  //console.log(termino);
   this.digito=termino.substring(termino.length-1,termino.length);
   this.router.navigate(['/buscar',this.digito]);
 

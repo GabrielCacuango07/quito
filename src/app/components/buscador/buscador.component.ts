@@ -15,12 +15,12 @@ export class BuscadorComponent implements OnInit {
 
 
   }
-
+  // use the horarioService for search whith the last caracter or "placa" 
   ngOnInit(): void {
 
     this.activatedRoute.params.subscribe(params =>{
       this.horarios = this._horariosServices.buscarPlaca(params['termino']);
-      console.log(this.horarios);
+      //console.log(this.horarios);
       this.termino=params['termino'];
 
     });

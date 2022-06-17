@@ -9,6 +9,7 @@ export class FooterComponent implements OnInit {
  year :string = '2022';
   constructor() { }
 
+  //only get the year actually and show in the  footer
   ngOnInit(): void {
 
     let copyright=new Date();

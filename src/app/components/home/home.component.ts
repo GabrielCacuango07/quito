@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+// functionality of the button Consultar Horarios
   irConsulta(){
     this.router.navigate(['/about']);
     console.log("funciona");

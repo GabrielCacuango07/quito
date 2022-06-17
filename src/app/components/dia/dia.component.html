@@ -1,8 +1,47 @@
 <div class="container">
 
  <h1> {{dia.dia}}</h1>  
-<p> Horario de la mañana </p>
+<h4> Horario de la mañana </h4>
 <p> {{dia.temprano_uno}} - {{dia.temprano_dos}} </p>
+
+<h4> Horario de la tarde </h4>
+
+<p> {{dia.tarde_uno}} - {{dia.tarde_dos}} </p>
+
+<h4>Placa </h4>
+<p>{{dia.placa}}</p>
+
+
 
 
 </div>
+<div class="container">
+
+    <form (submit)="saveHora()" >
+        <div class="container">
+            <p> Modificar horario en la mañana:</p>
+            <input type="time" [(ngModel)]="temprano_uno" 
+            min="00:00" max="24:00" required name="temprano_uno">
+     
+           <input type="time" [(ngModel)]="temprano_dos" 
+            min="00:00" max="24:00" required name="temprano_dos">
+        </div>
+       
+<br>
+<div class="container">
+    <p>Modificar Horario de la tarde:</p>
+    <input type="time" [(ngModel)]="tarde_uno" 
+    min="00:00" max="24:00" required name="tarde_uno">
+
+    <input type="time" [(ngModel)]="tarde_dos" 
+    min="00:00" max="24:00" required name="tarde_dos">
+</div>
+      
+<br>  
+<br>
+      <button  class="btn btn-primary">Guardar</button>
+
+    </form>
+</div>
+
+

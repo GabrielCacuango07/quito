@@ -5,12 +5,22 @@
 
     <div class="card-columns">
         <div class="card" *ngFor="let horario of horarios; let i =index">
-            <img class="card-img-top" [src]="horario.img" alt="Card image cap">
+            <div class="row">
+                <div class="col-6">
+                    <img class="card-img-top" [src]="horario.img1" alt="Card image cap">
+                </div>
+                <div class="col-6">
+                    <img class="card-img-top" [src]="horario.img2" alt="Card image cap">
+                </div>
+            </div>
+            
+            
             <div class="card-body">
               <h5 class="card-title">{{horario.dia}} </h5>
+              <h5 class="card-title">{{horario.placa}} </h5>
               <p class="card-text">Su horario de circulacion es de: .</p>
-              <p>07:00 - 08:00 </p>
-              <p>17:00 - 20:00</p>
+              <p>{{horario.temprano_uno}} - {{horario.temprano_dos}} </p>
+              <p>{{horario.tarde_uno}} - {{horario.tarde_dos}}</p>
               <button  (click)="verDia(i)" 
               
               type="button" class="btn btn-outline-primary btn-block"  > Editar</button>

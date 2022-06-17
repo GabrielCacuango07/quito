@@ -32,3 +32,8 @@
   .fadeIn {
     animation-name: fadeIn;
   }
+
+  .card-img-top {
+    height: 120px;
+    width: 20px;
+  }

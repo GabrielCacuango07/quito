@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 //routes 
 
@@ -17,6 +18,7 @@ import { HorarioComponent } from './components/horario/horario.component';
 // servicios 
 import { horarioService } from './components/service/horario.service';
 import { DiaComponent } from './components/dia/dia.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -26,10 +28,12 @@ import { DiaComponent } from './components/dia/dia.component';
     AboutComponent,
     HorarioComponent,
     DiaComponent,
+    BuscadorComponent,
     
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     APP_ROUTING
   ],
   providers: [horarioService],

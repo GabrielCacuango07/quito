@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: []
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
+ digito: string = "";
+  constructor( private router:Router) { }
 
   ngOnInit(): void {
   }
+
+buscarPlaca(termino:string){
+  console.log(termino);
+  this.digito=termino.substring(termino.length-1,termino.length);
+  this.router.navigate(['/buscar',this.digito]);
+
+};
 
 }

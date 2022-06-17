@@ -19,6 +19,7 @@ import { HorarioComponent } from './components/horario/horario.component';
 import { horarioService } from './components/service/horario.service';
 import { DiaComponent } from './components/dia/dia.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     HorarioComponent,
     DiaComponent,
     BuscadorComponent,
+    FooterComponent,
     
   ],
   imports: [

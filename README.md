@@ -15,7 +15,9 @@ Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angu
 ```
 Angular CLI
 ```
-
+```
+Node Package Manager (npm)
+```
 ### Instalación 🔧
 
 verificar el Angular CLI mediante el cmd 
@@ -33,6 +35,11 @@ git clone 'https://github.com/GabrielCacuango07/quito.git'
 ```
 
 Luego dirigase dentro de la carpeta del proyecto y proceda a ejecutar 
+
+```
+npm install
+```
+Esto instalara todas las dependencias necesarios de Node, posterior a esto ejecutar 
 
  `ng serve` para iniciar el servidor. Dirigirse a  `http://localhost:4200/`. La aplicacion automaticamente se ejecutara y respondera a los cambios en tiempo real
 
